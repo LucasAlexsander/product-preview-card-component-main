@@ -1,0 +1,122 @@
+/* Importando as fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap);
+    font-weight: 500, 700;
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url(../assets/fonts/fraunces/frauncessoftwonkopszwght.ttf);
+    font-weight: 700;
+}
+
+:root {
+    /* Primary */
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    /* Neutral */
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: .6;
+}
+
+body {
+    background-color: var(--cream);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+body main {
+    background: var(--white);
+    width: 600px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+}
+
+main .img {
+    background: url(../images/image-product-desktop.jpg) no-repeat;
+    background-size: contain;
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+main .content {
+    background: var(--white);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0 10px 10px 0;
+}
+
+.content h2 {
+    letter-spacing: 5px;
+}
+
+.content h1 {
+    font-family: 'Fraunces';
+    font-size: 40px;
+}
+
+.content .price {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.content .price p{
+    font-family: "Fraunces";
+}
+
+.content .price p {
+    font-size: 36px;
+    color: #3D8369;
+}
+
+.content .price span {
+    text-decoration: line-through;
+    margin-left: 20px;
+    opacity: .7;
+}
+
+
+.content button {
+    background: #3D8168;
+    color: white;
+    border: none;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button img {
+    margin: 0 10px 0 10px;
+}
+
+.content button:hover {
+    background: #1A4031;
+}
